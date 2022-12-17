@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/qrcode-attendance-website/static/css/main.14a97cce.css",
+    "main.js": "/qrcode-attendance-website/static/js/main.40530f20.js",
+    "index.html": "/qrcode-attendance-website/index.html",
+    "main.14a97cce.css.map": "/qrcode-attendance-website/static/css/main.14a97cce.css.map",
+    "main.40530f20.js.map": "/qrcode-attendance-website/static/js/main.40530f20.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14a97cce.css",
+    "static/js/main.40530f20.js"
+  ]
+}
