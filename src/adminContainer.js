@@ -30,8 +30,6 @@ function AdminMainContainer() {
         randStr =randStringGen();
         setUrl(randStr);
     }, durationOfInterval);
-
-    
     
     const qrcode = (
         <QRCodeCanvas
@@ -76,7 +74,7 @@ function AdminMainContainer() {
             </div>
             <div className='rightWrapper'>
                 <div className='qrReaderWrapper'>
-                    {/* {qrReader} */}
+                    {qrReader}
                 </div>
                 
                 <p>{data}</p>
