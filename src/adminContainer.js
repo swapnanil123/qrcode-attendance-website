@@ -35,7 +35,7 @@ function AdminMainContainer() {
           id="qrCode"
           value={url}
           size={280}
-          bgColor={"#D4D4D4"}
+          bgColor={"#FFFFFF"}
           level={"H"}
         />
     );
