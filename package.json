@@ -1,5 +1,6 @@
 {
   "name": "test",
+  "homepage": "https://swapnanil123.github.io/qrcode-attendance-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,10 +14,14 @@
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-qr-reader": "^3.0.0-beta-1",
+    "react-qr-scanner": "^1.0.0-alpha.11",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

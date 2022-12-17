@@ -1,7 +1,7 @@
 .head_wrapper {
   background: linear-gradient(to right, #5f2c82, #49a09d);
   /* border: 1px solid black; */
-  height: 70px;
+  height: 60px;
   color: #fff;
   text-transform: uppercase;
   display: flex;

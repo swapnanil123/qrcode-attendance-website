@@ -1,5 +1,6 @@
-import React,{ useState } from 'react';
+import React,{ useState, useEffect } from 'react';
 import { QRCodeCanvas } from "qrcode.react";
+import { QrReader } from 'react-qr-reader';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './adminContainer.css';
 
@@ -10,6 +11,7 @@ function AdminMainContainer() {
     const time = current.toLocaleTimeString("en-US");
 
     const [url, setUrl] = useState("");
+    const [data, setData] = useState('No result');
 
     const randStringGen = () => {
         var randomstring = '';
@@ -22,14 +24,15 @@ function AdminMainContainer() {
         }
         return randomstring;
     };
-
-    const durationOfInterval = 1*60000;
+    var randStr='';    
+    const durationOfInterval = 0.1*60000;
     setInterval(() => {
-        var randStr =randStringGen();
+        randStr =randStringGen();
         setUrl(randStr);
     }, durationOfInterval);
 
-
+    
+    
     const qrcode = (
         <QRCodeCanvas
           id="qrCode"
@@ -39,6 +42,22 @@ function AdminMainContainer() {
           level={"H"}
         />
     );
+
+    const qrReader = (
+        <QrReader
+            onResult={(result, error) => {
+                if (!!result) {
+                    console.log("GOT IT")
+                    setData(result.text);
+                }
+
+                if (!!error) {
+                    console.info(error);
+                }
+            }}
+            style={{ width: '300px',height: '300px' }}
+        />
+    )
 
 
     return(
@@ -52,11 +71,15 @@ function AdminMainContainer() {
                 <div className='qrDetails'>
                     <span className='mb-2 text-capitalize'><strong >class name : </strong>computer networks</span>
                     <span>This QR Code valid upto 11.00am to 1.00pm.</span>
+                    <span>{url}</span>
                 </div>
             </div>
             <div className='rightWrapper'>
+                <div className='qrReaderWrapper'>
+                    {/* {qrReader} */}
+                </div>
                 
-                
+                <p>{data}</p>
             </div>
         </div>
     )
