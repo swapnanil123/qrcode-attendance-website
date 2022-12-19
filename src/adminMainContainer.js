@@ -1,8 +1,7 @@
-import React,{ useState, useEffect } from 'react';
+import React,{ useState } from 'react';
 import { QRCodeCanvas } from "qrcode.react";
-import { QrReader } from 'react-qr-reader';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './adminContainer.css';
+import './adminMainContainer.css';
 
 function AdminMainContainer() {
     
@@ -11,7 +10,6 @@ function AdminMainContainer() {
     const time = current.toLocaleTimeString("en-US");
 
     const [url, setUrl] = useState("");
-    const [data, setData] = useState('No result');
 
     const randStringGen = () => {
         var randomstring = '';
@@ -41,21 +39,7 @@ function AdminMainContainer() {
         />
     );
 
-    const qrReader = (
-        <QrReader
-            onResult={(result, error) => {
-                if (!!result) {
-                    console.log("GOT IT")
-                    setData(result.text);
-                }
-
-                if (!!error) {
-                    console.info(error);
-                }
-            }}
-            style={{ width: '300px',height: '300px' }}
-        />
-    )
+    
 
 
     return(
@@ -73,11 +57,7 @@ function AdminMainContainer() {
                 </div>
             </div>
             <div className='rightWrapper'>
-                <div className='qrReaderWrapper'>
-                    {/* {qrReader} */}
-                </div>
                 
-                <p>{data}</p>
             </div>
         </div>
     )

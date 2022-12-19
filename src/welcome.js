@@ -1,8 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AdminMainContainer from './adminMainContainer';
 import Home from './Home';
+import AdminView from './AdminView';
+import StudentView from './StudentView';
+
 
 function Welcome() {
     return(
@@ -10,7 +12,8 @@ function Welcome() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={ <Home/> } />
-                    <Route path='/adminMainContainer' element={ <AdminMainContainer/> } />
+                    <Route path='/adminView' element={ <AdminView/> } />
+                    <Route path='/studentView' element={ <StudentView/> } />
                 </Routes>
             </BrowserRouter>
             
