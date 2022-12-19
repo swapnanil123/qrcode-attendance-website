@@ -74,7 +74,7 @@ function AdminMainContainer() {
             </div>
             <div className='rightWrapper'>
                 <div className='qrReaderWrapper'>
-                    {qrReader}
+                    {/* {qrReader} */}
                 </div>
                 
                 <p>{data}</p>

@@ -1,0 +1,32 @@
+
+.headding{
+    height: 40px;
+    color: #fff;
+}
+.mainWrapper {
+    /* border: 10px solid black; */
+    top: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.adminWrapper, .studentWrapper {
+    background: linear-gradient(to right, #5f2c82, #49a09d);
+    width: 600px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
