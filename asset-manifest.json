@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/qrcode-attendance-website/static/css/main.78d1818d.css",
-    "main.js": "/qrcode-attendance-website/static/js/main.229ada3b.js",
+    "main.css": "/qrcode-attendance-website/static/css/main.2419dd07.css",
+    "main.js": "/qrcode-attendance-website/static/js/main.9bbd5139.js",
     "index.html": "/qrcode-attendance-website/index.html",
-    "main.78d1818d.css.map": "/qrcode-attendance-website/static/css/main.78d1818d.css.map",
-    "main.229ada3b.js.map": "/qrcode-attendance-website/static/js/main.229ada3b.js.map"
+    "main.2419dd07.css.map": "/qrcode-attendance-website/static/css/main.2419dd07.css.map",
+    "main.9bbd5139.js.map": "/qrcode-attendance-website/static/js/main.9bbd5139.js.map"
   },
   "entrypoints": [
-    "static/css/main.78d1818d.css",
-    "static/js/main.229ada3b.js"
+    "static/css/main.2419dd07.css",
+    "static/js/main.9bbd5139.js"
   ]
 }
